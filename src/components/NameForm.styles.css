@@ -1,0 +1,91 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Annie+Use+Your+Telescope&family=Glegoo&family=Paytone+One&family=Playfair+Display+SC&family=Press+Start+2P&display=swap');
+body{
+ background-color: aqua;
+}
+.principal{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    
+}
+.con{
+    display: flex;
+    flex-direction: column;
+     margin: 20px;
+     align-items: center;
+}
+.hello{
+    font-size: 22px;
+    font-family: 'Press Start 2P';
+    padding-top: 30px;
+
+    background: linear-gradient(80deg,  yellow, yellow);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+   
+  }
+
+ 
+  button {
+    width: 100%;
+    background-color: #e92929;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: 800;
+    font-size: 18px;
+    font-family: 'Press Start 2P';
+    
+  }
+
+.imagen1{
+    width: 530px;
+    height:150px;
+}
+.imagen3{
+    width: 32px;
+    height:32px;
+}
+
+.imagen2{
+    width: 150px;
+    height:400px;
+    margin-left: 190px;
+    margin-top: -196px;
+}
+/* img{
+    width: 200px;
+    height:600px;
+} */
+
+label{
+    font-size: 16px;
+    font-weight: 500;
+    text-align: end;
+    color: white;
+}
+/* 
+.pokedex{
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    margin-left: 180px;
+    margin-top: -156px;
+} */

@@ -1,38 +1,359 @@
-.App {
+@import url('https://fonts.googleapis.com/css2?family=Annie+Use+Your+Telescope&family=Glegoo&family=Paytone+One&family=Playfair+Display+SC&family=Press+Start+2P&family=Rampart+One&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",'Press Start 2P'
+    sans-serif;
+  box-sizing: border-box;
+  
+}
+body{
+ 
+  justify-content: space-evenly;
+  align-items: center;
+  align-content: center;
+  background: linear-gradient(80deg, #ff0000,#0000ff80);
+}
+.paginacion{
+  display: flex;
+  width: 50%;
+  align-items: center;
+  justify-content:center;
+}
+.pageNumber{
+  color: white;
+  background-color: #000000;
+  margin:2px;
+  padding: 2px;
+}
+
+.page{
+  border-radius: 50%;
+  color: white;
+  font-size: 10px;
   text-align: center;
+  display: flex;
+  justify-content:center;
+  background-color: black;
+  width:32px;
+  height: 32px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+
+
+.contenedor{
+  width: 100%;
+  height: auto;
+  display:flex;
+  flex-wrap: wrap;
+  text-decoration: none;
+  justify-content: space-evenly;
+  align-items: center;
+  align-content: center;
+  list-style:none
+}
+.il{
+  list-style:none
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.card{
+  width: 250px;
+  height: 500px;
+  background-color: #00ffff25;
+  flex-direction: column;
+  border-radius: 15px;
+  align-content: center;
+  
+  margin: 70px;
+  box-shadow: -1px 15px 30px -12px black;
+  transition: all 0.3s ease;
+
+}
+.card:hover{
+  width: 300px;
+  height: 550px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.cardCover{
+  width: auto;
+  height: 200px;
+  flex-direction: row;
+  justify-content: space-evenly;
+  border-radius: 15px 15px 0 0;
+ 
+  transition: all 0.3s ease;
+}
+
+
+.card img{
+  width: 200px;
+
+  margin-top: -86px;
+  margin-left: 90px;
+  
+}
+.card img:hover{
+  width: 250px;
+  
+}
+.logoo{
+  justify-content: flex-end;
+  align-items: flex-end;
+  display: flex;
+}
+.logoo img {
+ width: 40%;
+ height: 25vh;
+ 
+}
+
+.welcome{
+  font-size: xx-large;
+  margin-left: 75px;
+}
+.welcome p{
+  font-weight: 600;
+  font-size: 30px;
+  color: yellow;
+  font-family: 'Press Start 2P';
+  margin: 50px;
+  display: flex;
+  justify-content:center;
+  
+}
+
+.link{
+  font-weight: 600;
+  text-decoration: none;
+  font-size: 1rem;
+  font-family: 'Press Start 2P';
+  justify-content:center;
+  margin-left: 10px;
+}
+
+.link link{
+  color:#0F0;
+  text-decoration : none;
+  
+  
+}
+.link link h1 {
+  position: relative;
+  color: black;
+}
+.link link h1:before {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 100%;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.info{
+  font-size: x-large;
+  color: white;
+  font-weight: 800;
+  display: flex;
+  justify-content: center;
+
+}
+.info li{
+  list-style:none
+}
+
+.lista{
+  list-style:none;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  
+}
+.letter{
+  font-size: x-large;
+  font-family: 'Times New Roman', Times, serif;
+
+}
+.letter2{
+  font-size: x-large;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  
+  background-color: yellow;
+  border-radius: 50%;
+}
+.examplo{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-end;
+  width: 100%;
+  padding: 2rem;
+  font-size: 1.3rem;
+  color:#3897db;
+  font-weight: 600;
+  border-bottom-right-radius: 0.8rem;
+  border-bottom-left-radius: 0.8rem;
+  position: absolute;
+}
+
+
+.individual{
+  width: 70%;
+  background: linear-gradient(80deg, orange, orangered);
+  border-radius: 15px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  margin: auto;
+  margin-top: 50px;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+
+}
+
+.contenedor{
+  display: flex;
+}
+.detail{
+  margin: 20px;
   color: white;
+  font-family: 'Press Start 2P';
+  font-size: 35px;
+  display: flex;
+  margin: 19px;
 }
 
-.App-link {
-  color: #61dafb;
+.tipoPokemon{
+  background-color: #00ffff50;
+  padding:15px;
+  border-radius: 15px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.abilityes {
+  background-color:#00ffff50;
+  padding:15px;
+  border-radius: 15px;
+}
+.abilityes ul{
+  list-style:none;
+}
+.stats{
+  background-color: #00ffff50;
+  padding:15px;
+  border-radius: 15px;
+  margin:5px;
+}
+.stats ul{
+  list-style:none;
+}
+.peso{
+  display: flex;
+  width: auto;
+  justify-content:space-around;
+  background-color: #00ffff50;
+  padding:15px;
+  border-radius: 15px;
+}
+
+.imagenpokemon{ 
+  align-items: center;
+  margin-left: -390px;
+  margin-top: 19px;
+}
+.filter{
+  display: flex;
+  margin: 50px;
+  justify-content: space-evenly;
+  align-items: center
+
+}
+.filter select{
+  margin: 50px;
+  width: 400px;
+  height:3rem;
+  background-color: #00000025;
+}
+.filter option{
+  color: black;
+  font-family: 'Press Start 2P';
+  
+}
+.search{
+  display: flex;
+  text-align: center;
+  align-items: center
+}
+.search input{
+  border-radius: 10px;
+  width: 200px;
+  height:2.75rem;
+}
+
+.imagenpokemon{
+  width: 60%;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.rock {
+  
+  background: linear-gradient(80deg, #5a1919, #2e0e0e);
+}
+
+.ghost {
+  background: linear-gradient(80deg, #ced7dd, #353636);
+}
+.electric {
+  background: linear-gradient(80deg, #f5f23a, #f8f40f);
+}
+.bug {
+  
+  background: linear-gradient(80deg, #589734, #7aeb39);
+}
+.poison {
+  background-color: #b46ad1;
+  background: linear-gradient(80deg, #b46ad1, #7806a5);
+}
+.normal {
+  background-color: #466d61;
+  background: linear-gradient(80deg, #466d61, #465a54);
+  
+}
+.fairy {
+  background-color: rgba(255, 192, 203, 0.863);
+}
+.fire {
+  background: linear-gradient(80deg, #fa0909,#b90303);
+}
+.grass {
+  background: linear-gradient(80deg, #48eb39, #038d48);;
+}
+.water {
+  background: linear-gradient(80deg, #3897db, #03538d);
+  
+}
+.flying{
+  
+  background: linear-gradient(80deg, #3897db, #b46ad1);
+}
+.fighting {
+  background: linear-gradient(80deg, #f3be10, #523f02);
+  
+}
+.ground {
+  background: linear-gradient(80deg,  #1f1801,  #312705);
+  
 }
